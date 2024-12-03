@@ -1,0 +1,38 @@
+Create a new User : (ok)
+    curl -X POST http://localhost:3001/api/user \
+    -H "Content-Type: application/json" \
+    -d '{"name":"Fred","type":"USER","city":"Marseille","state":"France","zipCode":13009,"peanutAllergies":false,"eggAllergies":false,"dairyAllergies":false}'
+
+Create a new restaurant : (ok)
+    curl -X POST http://localhost:3001/api/restaurant \
+    -H "Content-Type: application/json" \
+    -d '{"name":"Le delice des dieux", "address": "23 avenue du Prado", "zipCode": 13009, "restaurantType": "ITALIAN"}'
+
+Update the field of a restaurant : (ok)
+    curl -X PUT http://localhost:3001/api/restaurant \
+    -H "Content-Type: application/json" \
+    -d '{"name":"La belle chaise", "address": "23 avenue du Prado", "zipCode": 13011, "restaurantType": "ITALIAN"}'
+
+Get the restaurant with the id 1 : (ok)
+    curl -X GET http://localhost:3001/api/restaurant/1
+
+Update the userType of the user Lucas : (ok)
+    curl -X PATCH http://localhost:3001/api/user/Lucas/type?userType=ADMIN \
+    -H "Content-Type: application/json"
+
+
+Get, if user is an admin, the review pending : (ok)
+    curl -X GET "http://localhost:3001/api/review/search?userName=Lucas&status=PENDING"
+
+Modify the status of review : (ok)
+    curl -X PUT http://localhost:3001/api/review/5 \
+    -H "Content-Type: application/json" \
+    -d '"APPROVED"'
+
+Get the reviews of a restaurant that have been approved (no need specification) as a normal user : (ok)
+    curl -X GET "http://localhost:3001/api/review/search?userName=Emma&restaurantName=Curry%20Delight" \
+    -H "Content-Type: application/json"
+
+Get all the reviews, if the user in admin : (ok)
+    curl -X GET "http://localhost:3001/api/review?userName=Lucas" \
+    -H "Accept: application/json"

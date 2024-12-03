@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS attributes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CSS attributes</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Basic text attributes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Valeur</td>
+                        <td>Description</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>font-family</td>
+                        <td>serif, sans-serif, monospace, cursive, ...</td>
+                        <td>determine the style of the writing</td>
+                    </tr>
+                    <tr>
+                        <td>font-size</td>
+                        <td>xxx px</td>
+                        <td>determine the size of the writing</td>
+                    </tr>
+                    <tr>
+                        <td>font-weight</td>
+                        <td>bold, normal, light, 500, 600, ...</td>
+                        <td>determine the thickness of the writing</td>
+                    </tr>
+                    <tr>
+                        <td>text-align</td>
+                        <td>left, center, right, justify</td>
+                        <td>determine the alignment of the text</td>
+                    </tr>
+                    <tr>
+                        <td>color</td>
+                        <td>#XXX, #XXXXXX, rgb(x, x, x), blue, ...</td>
+                        <td>determine the color of the writing</td>
+                    </tr>
+                    <tr>
+                        <td>background-color</td>
+                        <td>#XXX, #XXXXXX, rgb(x, x, x), blue, ...</td>
+                        <td>determine the color of the background</td>
+                    </tr>
+                    <tr>
+                        <td>opacity</td>
+                        <td>0.4, ...</td>
+                        <td>determiane the opacity/transparence of an element</td>
+                    </tr>
+                    <tr>
+                        <td>background-image</td>
+                        <td>url(...)</td>
+                        <td>add an image as the background of the element</td>
+                    </tr>
+                    <tr>
+                        <td>text-transform</td>
+                        <td>uppercase, lowercase, ...</td>
+                        <td>transform the text according a special feature</td>
+                    </tr>
+                    <tr>
+                        <td>line-height</td>
+                        <td>1.4 or xxx % or xxx px</td>
+                        <td>Determine the height of text lines</td>
+                    </tr>
+                    <tr>
+                        <td>letter-spacing</td>
+                        <td>xxx px</td>
+                        <td>space between letters</td>
+                    </tr>
+                    <tr>
+                        <td>word-spacing</td>
+                        <td>xxx px</td>
+                        <td>space between words</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>The box model</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Valeur</td>
+                        <td>Description</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>width</td>
+                        <td>xxx px, xxx %</td>
+                        <td>determine the width of the box</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>xxx px, xxx %</td>
+                        <td>determine the height of the box</td>
+                    </tr>
+                    <tr>
+                        <td>padding</td>
+                        <td>xxx px</td>
+                        <td>determine the space interne of the box between the border and the content.<br>Can be top, right, bottom or left.<br>All value can be set up in one line</td>
+                    </tr>
+                    <tr>
+                        <td>border</td>
+                        <td>xxx px, solid, ...., green, ....</td>
+                        <td>define the thickness, the form and the color of the border</td>
+                    </tr>
+                    <tr>
+                        <td>margin</td>
+                        <td>xxx px</td>
+                        <td>determine the space externe of the box.<br>Can be top, right, bottom or left.<br>All value can be set up in one line</td>
+                    </tr>
+                    <tr>
+                        <td>overflow</td>
+                        <td>scroll, </td>
+                        <td>determine how the display will react if the child exceed the parent size</td>
+                    </tr>
+                    <tr>
+                        <td>border-radius</td>
+                        <td>0.5</td>
+                        <td>adjust corner of the box</td>
+                    </tr>
+                    <tr>
+                        <td>box-sizing</td>
+                        <td>content-box or border-box</td>
+                        <td>set up the way the browser calculate the dimension of the box model</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Display and Positionning</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Valeur</td>
+                        <td>Description</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="4">position</td>
+                        <td>relative</td>
+                        <td>move relatively from the early position</td>
+                    </tr>
+                    <tr>
+                        <td>absolute</td>
+                        <td>stay always to the absolute position determined</td>
+                    </tr>
+                    <tr>
+                        <td>fixed</td>
+                        <td>stay on the screen to the position determined</td>
+                    </tr>
+                    <tr>
+                        <td>sticky</td>
+                        <td>stay to the screen until in take back the normal position</td>
+                    </tr>
+                    <tr>
+                        <td>z-index</td>
+                        <td>xxx</td>
+                        <td>determine the priority of apparition when elements are overlapping</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">display</td>
+                        <td>inline</td>
+                        <td>don't prevent other elements horizontally</td>
+                    </tr>
+                    <tr>
+                        <td>block</td>
+                        <td>prevent other elements horizontally</td>
+                    </tr>
+                    <tr>
+                        <td>inline-block</td>
+                        <td>to share equally the space of several blocks horizontally</td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>left or right</td>
+                        <td>this property allow to move element as far left or as far right as possible on a web page</td>
+                    </tr>
+                    <tr>
+                        <td>clear</td>
+                        <td>left or right</td>
+                        <td>clear an element's left or right side (or both)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+</body>
+</html>

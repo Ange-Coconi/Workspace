@@ -1,0 +1,41 @@
+header h1 {
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+    background-image: url(../images/pattern.webp);
+}
+
+section h2 {
+    font-family: Helvetica;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+section h3 {
+    font-size: 26px;
+}
+
+section p {
+    font-size: 18px;
+}
+
+#brushes {
+    background-color: mediumspringgreen;
+}
+
+#frames {
+    background-color: lightcoral;
+}
+
+#paint {
+    background-color: skyblue;
+}
+
+span {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: blue;
+}

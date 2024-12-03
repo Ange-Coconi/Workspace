@@ -1,0 +1,15 @@
+com\dining\review\api\model\Review$ReviewBuilder.class
+com\dining\review\api\controller\DinningReviewController.class
+com\dining\review\api\repository\UserRepository.class
+com\dining\review\api\repository\ReviewRepository.class
+com\dining\review\api\model\AdminReviewAction.class
+com\dining\review\api\model\UserBuilder.class
+com\dining\review\api\repository\RestaurantRepository.class
+com\dining\review\api\model\User$UserType.class
+com\dining\review\api\model\Restaurant.class
+com\dining\review\api\model\Restaurant$RestaurantType.class
+com\dining\review\api\model\RestaurantDetailsResponse.class
+com\dining\review\api\model\User.class
+com\dining\review\api\DiningReviewApiApplication.class
+com\dining\review\api\model\Review.class
+com\dining\review\api\model\Review$StatusReview.class

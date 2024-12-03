@@ -1,0 +1,25 @@
+.banner {
+    background-color: #4D00FF;
+    color: white;
+    margin-top: 75px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#small-jinx {
+    height: 500px;
+    width: 500px;
+}
+
+#creator {
+    color: #4D00FF;
+    font-size: 100px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.bold {
+    font-weight: 900;
+}
