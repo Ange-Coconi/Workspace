@@ -1,9 +1,196 @@
-* {
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
+
+
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    position: fixed;
+    z-index: 1;
+}
+
+header img {
+    margin-left: 10px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a h3 {
+    text-decoration: underline;
+    margin: 0px 10px;
+}
+
+main {
+    margin-top: 69px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission {
+    background-image: url(../images/img-mission-background.webp);
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.banner {
+    background-color: black;
+    text-align: center;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.banner h4 {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.featuredTea {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuredTea h2 {
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.featuredTea h4 {
+    font-size: 26px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.imagesFeaturedTea {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.imagesFeaturedTea figure {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imagesFeaturedTea figure img {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.imagesFeaturedTea figure figcaption h5 {
+    text-align: center;
+    margin: 0;
+}
+
+.locations {
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/img-locations-background.webp);
+}
+
+.locations h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.rowLocation {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.location {
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.location h3, .location h4 {
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact h2, .contact h5 {
+    margin: 10px 0px;
+}
+
+#copyright {
+    width: 100%;
+}
+
+#copyright h6 {
+    margin-left: 20px;
+    text-align: left;
+}
