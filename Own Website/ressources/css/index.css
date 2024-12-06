@@ -1,0 +1,65 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: sepia(90%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header a .icon {
+    fill: white;
+    transition: fill 0.3s ease;
+}
+
+.header a:hover .icon,
+.header a:active .icon {
+    fill: rgb(82, 226, 15); 
+}
+
+.header nav {
+    display: flex;
+}
+
+.header nav a {
+    margin: 0 1.5rem;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.header nav a:hover,
+.header nav a:active {
+    color: rgb(82, 226, 15); 
+    border-bottom: solid 2px rgb(82, 226, 15);
+}
+
+.header .contact {
+    color: black;
+    background-color: white;
+    border: solid rgb(82, 226, 15) 3px;
+    border-radius: 8px;
+    padding: 0.5rem 0.8rem;
+}
+
+/* Main */
