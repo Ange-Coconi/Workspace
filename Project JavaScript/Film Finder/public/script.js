@@ -1,12 +1,10 @@
-import ressources from './helpers.js';
-
 const tmdbKey = '6e411501b0459d9e48a638d1a4872bf3';
 const tmdbBaseUrl = 'https://api.themoviedb.org/3';
 const playBtn = document.getElementById('playBtn');
 
 const getGenres = async () => {
   const genreRequestEndpoint = '/genre/movie/list';
-  const requestParams = '?api_key=tmdbKey';
+  const requestParams = `?api_key=${tmdbKey}`;
   const urlToFetch = tmdbBaseUrl + genreRequestEndpoint + requestParams;
   try {
     const response = await fetch(urlToFetch);
@@ -23,9 +21,9 @@ const getGenres = async () => {
 };
 
 const getMovies = async () => {
-  const selectedGenre = ressources.getSelectedGenre();
+  const selectedGenre = getSelectedGenre();
   const discoverMovieEndpoint = '/discover/movie';
-  const resquestParams = '?api_key=tmdbKey&with_genres=selectedGenre';
+  const requestParams = `?api_key=${tmdbKey}&with_genres=${selectedGenre}`;
   const urlToFetch = tmdbBaseUrl + discoverMovieEndpoint + requestParams;
   try {
     const response = await fetch(urlToFetch);
@@ -43,8 +41,8 @@ const getMovies = async () => {
 
 const getMovieInfo = async (movie) => {
   const movieId = movie.id;
-  const movieEndpoint = '/movie/${movieId}';
-  const requestParams = '?api_key=tmdbKey';
+  const movieEndpoint = `/movie/${movieId}`;
+  const requestParams = `?api_key=${tmdbKey}`;
   const urlToFetch = tmdbBaseUrl + movieEndpoint + requestParams;
   try {
     const response = await fetch(urlToFetch);
@@ -65,10 +63,10 @@ const showRandomMovie = async () => {
     clearCurrentMovie();
   };
   const movies = await getMovies();
-  const randomMovie = ressources.getRandomMovie(movies);
+  const randomMovie = getRandomMovie(movies);
   const info = await getMovieInfo(randomMovie);
   displayMovie(info);
 };
 
-getGenres().then(ressources.populateGenreDropdown);
+getGenres().then(populateGenreDropdown);
 playBtn.onclick = showRandomMovie;
